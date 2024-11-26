@@ -129,11 +129,12 @@ volumeSlider.addEventListener("input", function() {
 	console.log("Volume = " + volumeSlider.value);
 
 	// Setting the new volume, which is percentage
-	video.volume = volumeSlider.value / 100
-	console.log("New Volume = " + video.volume);
+	video.volume = volumeSlider.value / 100;
+	var label = volumeSlider.value + "%";
+	console.log("New Volume label= " + label);
 
 	//Adjusting the label
-	volumeLabel.innerHTML = volumeSlider.value;
+	volumeLabel.innerHTML = label;
 
 
 });
